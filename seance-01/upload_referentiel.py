@@ -52,18 +52,38 @@ def lister_objets(nom_bucket: str) -> None:
 
 #  Bloc 4 : programme principal
 
+# def main() -> None:
+#     dossier_data = Path(__file__).parent.parent / "data" / "referentiel"
+#     verifier_bucket(BUCKET_NAME)
+#     fichiers_a_uploader = sorted(dossier_data.glob("*.csv"))
+#     if not fichiers_a_uploader:
+#         print(f"[ERREUR] Aucun fichier CSV trouvé dans {dossier_data}")
+#     return
+#     for chemin in fichiers_a_uploader:
+#         cle = f"referentiel/{chemin.name}"
+#     uploader_fichier(chemin, cle)
+#     lister_objets(BUCKET_NAME)
+#     print("\n[OK] Upload du référentiel Anfa terminé.")
+
+
+
 def main() -> None:
     dossier_data = Path(__file__).parent.parent / "data" / "referentiel"
     verifier_bucket(BUCKET_NAME)
+    
     fichiers_a_uploader = sorted(dossier_data.glob("*.csv"))
+    
     if not fichiers_a_uploader:
         print(f"[ERREUR] Aucun fichier CSV trouvé dans {dossier_data}")
-    return
+        return  # 👈 INDENTÉ (correction n°1)
+    
     for chemin in fichiers_a_uploader:
         cle = f"referentiel/{chemin.name}"
-    uploader_fichier(chemin, cle)
+        uploader_fichier(chemin, cle)  # 👈 INDENTÉ (correction n°2)
+    
     lister_objets(BUCKET_NAME)
     print("\n[OK] Upload du référentiel Anfa terminé.")
+    
 
 if __name__ == "__main__":
     main()
