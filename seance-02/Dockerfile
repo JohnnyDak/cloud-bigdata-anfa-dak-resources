@@ -1,0 +1,23 @@
+# Dockerfile pour l'application d'analyse du référentiel Anfa
+FROM python:3.11-slim-bookworm
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# Spark a besoin de Java
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends openjdk-17-jre-headless && \
+    rm -rf /var/lib/apt/lists/*
+
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+WORKDIR /app
+
+# Copie d'abord requirements.txt pour optimiser le cache
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Puis le code (qui change plus souvent)
+COPY . .
+
+CMD ["python", "analyse_referentiel.py"]
