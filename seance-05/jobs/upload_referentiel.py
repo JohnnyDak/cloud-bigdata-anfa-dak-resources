@@ -9,8 +9,8 @@ from pathlib import Path
 import boto3
 
 MINIO_ENDPOINT   = "http://minio:9000"   # nom du service Compose (vue de l'intérieur)
-MINIO_ACCESS_KEY = "anfa-app-key"
-MINIO_SECRET_KEY = "anfa-app-secret-2026"
+MINIO_ACCESS_KEY = "anfa-admin"
+MINIO_SECRET_KEY = "anfa-password-2026"
 BUCKET           = "anfa-raw"
 
 s3 = boto3.client(
