@@ -2,7 +2,7 @@
 
 **Nom et prénom :** DAKOU Koudjo
 **Identifiant GitHub :** JohnnyDak
-**Date de soumission :** 05/07/2026
+**Date de soumission :** 05/07/2026 
 
 ## Résumé de la séance
 
