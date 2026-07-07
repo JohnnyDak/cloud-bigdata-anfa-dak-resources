@@ -1,6 +1,6 @@
 # Rendu — Séance 8
 
-**Nom et prénom :** DAKOU Koudjou  
+**Nom et prénom :** DAKOU Koudjo  
 **Identifiant GitHub :** JohnnyDak  
 **Date de soumission :** 07/07/2026 
 
