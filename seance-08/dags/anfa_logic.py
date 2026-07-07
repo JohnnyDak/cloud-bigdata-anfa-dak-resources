@@ -44,3 +44,4 @@ def construire_message_notification(resume: dict) -> str:
         f"{resume['nb_fichiers']} fichier(s), "
         f"{resume['taille_totale_ko']} Ko au total."
     )
+# Trigger CI
