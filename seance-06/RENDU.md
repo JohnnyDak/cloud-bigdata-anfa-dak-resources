@@ -1,6 +1,6 @@
 # Rendu : Séance 6
 
-**Nom et prénom :** Denis AKPAGNONITE  
+**Nom et prénom :** DAKOU Koudjo  
 **Identifiant GitHub :** JohnnyDak  
 **Date de soumission :** 30/06/2026
 
