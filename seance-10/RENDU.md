@@ -26,7 +26,7 @@ J’ai déployé un serveur MLflow Tracking, entraîné 3 versions d’un modèl
 
 ## Réflexion personnelle
 
-MLflow apporte une traçabilité essentielle au cycle de vie des modèles : chaque expérimentation est datée, paramétrée et reproductible. Le Model Registry permet de gérer les versions en production de manière centralisée, évitant les fichiers de modèles éparpillés. L’alias `@production` remplace avantageusement les anciens stages et permet un chargement automatique de la bonne version par les applications.
+MLflow apporte une traçabilité essentielle au cycle de vie des modèles : chaque expérimentation est datée, paramétrée et reproductible. Le Model Registry permet de gérer les versions en production de manière centralisée, évitant les fichiers de modèles éparpillés. L’alias `@production` remplace avantageusement les anciens stages et permet un chargement automatique de la bonne version par les applications...
 
 ## Difficultés rencontrées
 
